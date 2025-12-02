@@ -1,0 +1,30 @@
+<h2>Minha Lista</h2>
+
+<div class="add-box">
+  <input
+    type="text"
+    placeholder="Digite um item..."
+    [(ngModel)]="novoItem"
+  >
+  <button (click)="adicionar()">Adicionar</button>
+</div>
+
+<ul class="lista">
+
+  <li *ngFor="let item of lista" [class.done]="item.concluido">
+
+    <a [routerLink]="['/produtos', item.id]" class="item-link">
+      <div class="item-box">
+        <input 
+          type="checkbox" 
+          [checked]="item.concluido" 
+          (change)="concluir(item)">
+        <span>{{ item.nome }}</span>
+      </div>
+    </a>
+
+    <button class="del" (click)="excluir(item.id)">X</button>
+
+  </li>
+
+</ul>

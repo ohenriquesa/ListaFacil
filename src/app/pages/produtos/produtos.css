@@ -1,0 +1,68 @@
+h2 {
+  margin-bottom: 20px;
+}
+
+.add-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.add-box button {
+  padding: 10px 15px;
+  background: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.lista {
+  list-style: none;
+  padding: 0;
+}
+
+.lista li {
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 6px solid purple;
+  position: relative;
+}
+
+.lista li.done {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.item-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button.del {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clicavel {
+  cursor: pointer;
+  color: purple;
+  text-decoration: underline;
+}

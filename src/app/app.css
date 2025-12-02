@@ -1,0 +1,19 @@
+nav {
+  background: purple;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}

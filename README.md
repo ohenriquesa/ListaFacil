@@ -1,59 +1,72 @@
-# ListaFacil
+# ListaFácil — Seu checklist simples para suas compras de Mercado!
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.1.
+O **ListaFácil** é um aplicativo simples desenvolvido em **Angular**, que permite criar listas de compras/tarefas rapidamente.  
+O usuário pode:
 
-## Development server
+- Adicionar itens  
+- Marcar como concluído  
+- Excluir itens  
+- Clicar em um item para abrir uma tela de detalhes
+- Tudo salvo em um **JSON Server (API fake)**  
 
-To start a local development server, run:
+## Telas
 
-```bash
-ng serve
+
+
+# Como rodar o projeto
+
+## Pré-requisitos
+
+- Node.js instalado  
+- Angular CLI instalado  
+- JSON Server instalado  
+
+### Instalar Angular CLI:
+
+```
+npm install -g @angular/cli
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Instalar JSON Server:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+npm install -g json-server
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
+# ▶ Iniciar o Backend (JSON Server)
+
+Na raiz do projeto (onde está o `db.json`), execute:
+
+```
+json-server --watch db.json
 ```
 
-## Building
+Isso iniciará a API fake em:
 
-To build the project run:
-
-```bash
-ng build
+```
+http://localhost:3000
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+# ▶ Iniciar o Frontend (Angular)
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Na pasta do projeto, execute:
 
-```bash
-ng test
+```
+ng serve --open
 ```
 
-## Running end-to-end tests
+O Angular abrirá automaticamente em:
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
+```
+http://localhost:4200
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+# Autores
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Projeto desenvolvido por **Alison Medeiros** e **Henrique Sá** para o Projeto Final da disciplina de Front-end.
